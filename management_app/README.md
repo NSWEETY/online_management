@@ -26,6 +26,8 @@ Things you may want to cover:
 * Rails 5.1.7
 * Ruby 2.6.3
 * sublime txt
+* courses  will have short name ,name, description
+* the index page will have a listing of courses that are available
 
 
 * commands used
@@ -38,6 +40,10 @@ Things you may want to cover:
 * bundle install
 * Rails s
 
+* pages
+* /courses/new
+* /about
+* 
 
 * DBMS part
 

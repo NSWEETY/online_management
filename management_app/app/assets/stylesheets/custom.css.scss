@@ -1,0 +1,21 @@
+@import "materialize";
+ @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Time new roman";
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .sign-up-form{
+     padding-top: 30px;
+  }
+
+.sign-up-form {
+  padding-top: 30px;
+}
