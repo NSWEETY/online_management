@@ -69,6 +69,7 @@ Things you may want to cover:
 * /courses/new
 * /about
 * /students
+* /students/new
 
 * DBMS part
 * courses table  - id (primary key)  ,short_name ,  name , description
