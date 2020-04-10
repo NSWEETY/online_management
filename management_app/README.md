@@ -60,6 +60,16 @@ Things you may want to cover:
 * student.password = "password"
 * student.save
 * end
+* rails generate migration create_student_courses
+* rails db:migrate
+* Student.first -> mamy to many relation
+* Course.first
+* student.courses
+* course.students
+* student.courses << course
+* student.courses.count ->for counting
+
+
 
 
 
@@ -74,9 +84,12 @@ Things you may want to cover:
 * /about
 * /students
 * /students/new
+* /login
 
 * DBMS part
 * courses table  - id (primary key)  ,short_name ,  name , description
 * student table - id (primary key) ,name ,email
+* password table - student_id ,password
+* student_courses table - id (primary key),student id ,course id  -> many to many relation 
 
 * ...
