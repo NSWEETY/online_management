@@ -2,7 +2,19 @@ class LoginsController < ApplicationController
 def new
 end
 def create
-	end
-	def destroy
-	end
+        student = Student.find_by(email: params[:logins][:email].downcase)
+        if student && student.authenticate(params[:logins][:password])
+            session[:student_id] = student.id
+            flash[:notice] = "Successfully logged in"
+            redirect_to student
+        else
+            flash.now[:notice] = "invalid email and password"
+            render 'new'
+        end
+    end
+    def destroy
+        session[:student_id] = nil
+        flash[:notice] = "you have successfully logged out"
+        redirect_to root_path
+    end
 end
