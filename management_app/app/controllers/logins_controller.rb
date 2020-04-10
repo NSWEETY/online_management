@@ -1,4 +1,6 @@
 class LoginsController < ApplicationController
+    #before_filter :find_model
+    skip_before_action :require_user, only: [:new, :create]
 def new
 end
 def create
