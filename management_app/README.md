@@ -56,7 +56,11 @@ Things you may want to cover:
 * working_c.save 
 * Course.destroy(5) ->delete
 * student =  Student.create(name: "sweety", email: "sweety234@gmail.com")
-* 
+* Student.all.each do |student|
+* student.password = "password"
+* student.save
+* end
+
 
 
 

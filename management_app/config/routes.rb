@@ -4,4 +4,7 @@ root 'courses#index'
 get 'courses/new', to: 'courses#new'
 get 'about', to: 'pages#about'
  resources :students, except: [:destroy]
+ get 'login', to: 'logins#new'
+ post 'login', to: 'logins#create'
+post 'logout', to: 'logins#destroy'
 end
